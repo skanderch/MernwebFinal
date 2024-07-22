@@ -1,0 +1,29 @@
+/* Styling for the Admin component */
+.admin-container {
+    background: rgba(0, 0, 0, 0.8); /* Transparent dark background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Purple neon glow effect */
+  }
+  
+  .admin-tabs .ant-tabs-nav {
+    background: rgba(5, 0, 7, 0.2); /* Light transparent purple background */
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5); /* Purple border */
+    box-shadow: 0 0 10px rgba(153, 50, 204, 0.5); /* Purple neon glow effect */
+  }
+  
+  .admin-tabs .ant-tabs-tab {
+    color: #e0e0e0; /* Light text color for tabs */
+    font-weight: bold;
+  }
+  
+  .admin-tabs .ant-tabs-tab-active {
+    color: #fff; /* White text color for the active tab */
+    border-bottom: 2px solid #9c27b0; /* Purple underline for active tab */
+  }
+  
+  .admin-tabs .ant-tabs-tab:hover {
+    color: #9c27b0; /* Purple text color on hover */
+  }
+  

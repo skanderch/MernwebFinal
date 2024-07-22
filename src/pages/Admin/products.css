@@ -1,0 +1,40 @@
+/* Styling for the Products component */
+.products-table-container {
+    background: rgba(85, 3, 107, 0.7); /* Dark transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(153, 50, 204, 0.7); /* Purple neon glow effect */
+  }
+  
+  /* Custom styling for Ant Design Table */
+  .ant-table {
+    background: rgba(0, 0, 0, 0.5); /* Dark transparent background for the table */
+    border-radius: 10px;
+  }
+  
+  .ant-table-thead > tr > th {
+    background: rgba(153, 50, 204, 0.5); /* Light transparent purple background */
+    color: #c71010; /* White text color */
+    border: 1px solid rgba(153, 50, 204, 0.5); /* Purple border */
+  }
+  
+  .ant-table-tbody > tr > td {
+    color: #00c8ded0; /* Light gray text color */
+  }
+  
+  /* Action links styling */
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .action-link {
+    color: #9c27b0; /* Purple color for action links */
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .action-link:hover {
+    color: #d500f9; /* Lighter purple color on hover */
+  }
+  

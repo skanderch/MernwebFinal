@@ -1,0 +1,78 @@
+/* ProductsForm.css */
+
+/* Modal background color with neon effect */
+.modal-custom .ant-modal-content {
+    background: rgba(0, 0, 0, 0.9) !important; /* Semi-transparent black background */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid rgba(255, 0, 255, 0.7); /* Neon border */
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.7); /* Neon glow */
+  }
+  
+
+  
+  /* Modal header style */
+  .ant-modal-header {
+    color: #ffffff; /* Neon purple text */
+    border-bottom: 1px solid rgba(255, 0, 255, 0.7); /* Neon border */
+  }
+  
+  /* Tab pane background */
+  .ant-tabs-content {
+    background: rgba(254, 253, 255, 0.8); /* Slightly transparent background for tabs */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  /* Form label and input styles */
+  .ant-form-item-label > label {
+    color: #BD00FF; /* Neon purple label */
+  }
+  
+  .ant-input,
+  .ant-select,
+  .ant-input-number,
+  .ant-textarea {
+    border: 1px solid rgba(255, 0, 255, 0.7); /* Neon border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(241, 235, 235, 0.6); /* Transparent background */
+    color: #090808; /* White text */
+  }
+  
+  /* Checkbox styles */
+
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background: #BD00FF; /* Neon purple checked background */
+    border-color: #BD00FF; /* Neon border */
+  }
+  
+  /* Button styles */
+  .ant-btn {
+    background: #BD00FF; /* Neon purple button */
+    border: 1px solid #BD00FF; /* Neon border */
+    color: #FFFFFF; /* White text */
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5); /* Neon glow */
+  }
+  
+  .ant-btn:hover {
+    background: rgba(255, 0, 255, 0.8); /* Lighter neon purple on hover */
+    border-color: rgba(255, 0, 255, 0.8); /* Lighter neon border */
+  }
+  
+  /* Tab styles */
+  .ant-tabs-tab {
+    color: #BD00FF; /* Neon purple tab text */
+  }
+  
+  .ant-tabs-tab-active {
+    border-bottom: 2px solid #BD00FF; /* Neon purple active tab border */
+  }
+  
+  /* Divider styles */
+  .ant-divider {
+    border-color: rgba(255, 0, 255, 0.7); /* Neon divider */
+  }
+  
+  /* Modal title */
+  .ant-modal-title {
+    color: #BD00FF; /* Neon purple modal title */
+  }
+  

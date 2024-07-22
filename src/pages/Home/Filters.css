@@ -1,0 +1,87 @@
+/* Container for filters */
+.filters-container {
+    width: 18rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    backdrop-filter: blur(8px); /* Optional: Add blur effect to background */
+  }
+  
+  /* Header for filters */
+  .filters-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Title for filters */
+  .filters-title {
+    font-size: 1.25rem;
+    color: #0ff; /* Neon cyan color */
+    font-weight: bold;
+  }
+  
+  /* Close icon */
+  .close-icon {
+    font-size: 1.5rem;
+    color: #0ff; /* Neon cyan color */
+    cursor: pointer;
+  }
+  
+  /* Content for filters */
+  .filters-content {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Title for categories */
+  .categories-title {
+    font-size: 1rem;
+    color: #0ff; /* Neon cyan color */
+  }
+  
+  /* List of categories */
+  .categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Individual category item */
+  .category-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Checkbox for category */
+  .category-checkbox {
+    width: 1rem;
+    height: 1rem;
+    accent-color: #0ff; /* Neon cyan color for checkbox */
+  }
+  
+  /* Label for category */
+  .category-label {
+    color: #fff; /* White color for labels */
+  }
+  
+  /* Price Filter */
+  .price-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .price-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #0ff; /* Neon cyan border */
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    color: #fff; /* White text */
+    border-radius: 0.25rem; /* Rounded corners */
+  }
+  

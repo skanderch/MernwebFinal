@@ -1,0 +1,51 @@
+/* bids.css */
+
+/* General styles for the Bids container */
+.bids-container {
+    background: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(38, 40, 40, 0.5); /* Neon cyan glow */
+    color: #e40000; /* White text color */
+    padding: 20px;
+  }
+  
+  /* Neon effect for modal title and headings */
+  .bids-container h1 {
+    color: rgb(1, 1, 1); /* Neon cyan color */
+  }
+  
+  /* Neon effect for table headers */
+  .ant-table-thead > tr > th {
+    background: rgba(0, 0, 0, 0.3); /* Neon cyan background */
+    color: #d10000; /* White text color */
+    border: 1px solid rgba(7, 8, 8, 0.5); /* Neon cyan border */
+  }
+  
+  /* Neon effect for table rows */
+  .ant-table-tbody > tr {
+    background: rgba(0, 0, 0, 0.1); /* Light transparent background */
+  }
+  
+  .ant-table-tbody > tr:hover {
+    background: rgba(153, 2, 204, 0.2); /* Neon cyan hover effect */
+    color: #fff; /* White text color on hover */
+  }
+  
+  /* Neon effect for modal footer */
+  .ant-modal-footer {
+    background: rgba(0, 0, 0, 0.8); /* Dark background */
+    border-top: 1px solid rgba(102, 2, 179, 0.5); /* Neon cyan border */
+    color: #fff; /* White text color */
+  }
+  
+  /* Neon effect for table action links */
+  .ant-table-tbody .ant-table-cell .neon-link {
+    color: rgb(0, 0, 0); /* Neon cyan color */
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .ant-table-tbody .ant-table-cell .neon-link:hover {
+    color: rgba(111, 3, 234, 0.8); /* Slightly dimmed neon cyan on hover */
+  }
+  

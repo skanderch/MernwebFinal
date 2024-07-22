@@ -1,0 +1,245 @@
+@import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+body {
+    background-image: url('images/background.gif'); /* Path to your GIF file */
+    background-size: cover; /* Make sure the GIF covers the entire page */
+    background-position: center; /* Center the GIF */
+    background-repeat: no-repeat; /* Prevent repeating the GIF */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure body height is 100% of the viewport height */
+    overflow: hidden; /* Hide scrollbars if necessary */
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent; /* Ensure it’s transparent */
+}
+
+.banner .slider {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+    z-index: 2;
+}
+
+@keyframes autoRun {
+    from {
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    }
+    to {
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+    }
+}
+
+.banner .slider .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(550px);
+}
+
+.banner .slider .item img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.banner .content {
+    position: relative;
+    width: min(1400px, 100vw);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.banner .content .left-side {
+    position: absolute;
+    top: 20px; /* Adjust this value as needed */
+    left: 20px; /* Adjust this value as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 20; /* Ensure it's above the author section */
+}
+
+.banner .content h1 {
+    font-family: 'ICA Rubrik';
+    font-size: 16em;
+    line-height: 1em;
+    color: #25283B;
+    position: relative;
+}
+
+.banner .content h1::after {
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: 2px #d2d2d2;
+    color: transparent;
+}
+
+.banner .content .author {
+    font-family: Poppins;
+    text-align: right;
+    max-width: 300px;
+    position: relative; /* Ensure it stacks properly with z-index */
+    z-index: 10; /* Ensure this is below the buttons and music player */
+}
+
+.banner .content h2 {
+    font-size: 3em;
+    color: #FF00FF; /* Purple color for the welcome message */
+}
+
+.banner .content .model {
+    background-image: url(images/model4.png);
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: auto 130%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1023px) {
+    .banner .slider {
+        width: 160px;
+        height: 200px;
+        left: calc(50% - 80px);
+    }
+
+    .banner .slider .item {
+        transform: 
+            rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(300px);
+    }
+
+    .banner .content h1 {
+        text-align: center;
+        width: 100%;
+        text-shadow: 0 10px 20px #000;
+        font-size: 7em;
+    }
+
+    .banner .content .left-side {
+        left: 10px; /* Adjust as needed */
+        top: 10px; /* Adjust as needed */
+        width: 100%; /* Full width on smaller screens */
+        align-items: center; /* Center items on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .banner .content .author {
+        text-align: center; /* Center text on smaller screens */
+        z-index: 10; /* Ensure this is below the buttons and music player */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner .slider {
+        width: 100px;
+        height: 150px;
+        left: calc(50% - 50px);
+    }
+
+    .banner .slider .item {
+        transform: 
+            rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(180px);
+    }
+
+    .banner .content h1 {
+        font-size: 5em;
+        text-align: left;
+    }
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Use 'flex-start' for alignment */
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    z-index: 20; /* Ensure it's above the author section */
+}
+
+.btn {
+    background-color: rgba(37, 40, 59, 0.5); /* Semi-transparent background color */
+    color: #FFF;
+    border: 2px solid rgba(37, 40, 59, 0.8); /* Semi-transparent border color */
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 10px;
+    /* Optional: Add shadow for better visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: rgba(169, 2, 235, 0.8); /* Semi-transparent hover background color */
+    box-shadow: 0 0 15px rgba(150, 0, 255, 0.6); /* Purple neon glow effect */
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.music-player {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    z-index: 20; /* Ensure it's above the author section */
+}
+
+.music-btn {
+    background-color: rgba(37, 40, 59, 0.5); /* Semi-transparent background color */
+    color: #FFF;
+    border: 2px solid rgba(37, 40, 59, 0.8); /* Semi-transparent border color */
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music-btn:hover {
+    background-color: #1e1f28;
+    box-shadow: 0 0 15px rgba(150, 0, 255, 0.6);
+}
+
+.volume-control {
+    width: 100px;
+}
+/* Other styles remain unchanged */
+
+.banner h1 {
+    font-size: 1em; /* Adjust as needed */
+    color: #FF00FF; /* Purple color for the welcome message */
+}
+
+/* Ensure other styles are consistent with the design */

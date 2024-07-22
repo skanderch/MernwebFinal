@@ -1,0 +1,58 @@
+/* Style for the background image */
+.login-background {
+    background-image: url('images/Background-image.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ensure it covers the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for the login container */
+  .login-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 450px;
+  }
+
+  /* Style for the login container with neon purple effect */
+  .login-container {
+    background: rgba(128, 0, 128, 0.5); /* Semi-transparent neon purple */
+    border: 2px solid rgba(255, 105, 180, 0.8); /* Neon pink border */
+    border-radius: 10px;
+    padding: 2rem;
+    width: 450px;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.8); /* Neon pink glow */
+    backdrop-filter: blur(10px); /* Optional: Add blur effect to background */
+  }
+  
+  /* Additional styles to make form elements stand out */
+  .login-container h1 {
+    color: #fff; /* White text color */
+  }
+  
+  .login-container .ant-form-item-label > label {
+    color: #fff; /* White label text */
+  }
+  
+  .login-container .ant-input {
+    background: rgba(255, 255, 255, 0.2); /* Slightly transparent input fields */
+    border: 1px solid rgba(255, 105, 180, 0.8); /* Neon pink border for inputs */
+  }
+  
+  .login-container .ant-input:focus {
+    border-color: rgba(255, 105, 180, 1); /* Bright neon pink border on focus */
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.5); /* Neon pink glow on focus */
+  }
+  
+  .login-container .ant-btn-primary {
+    background: rgba(255, 105, 180, 0.8); /* Neon pink button */
+    border: none;
+  }
+  
+  .login-container .ant-btn-primary:hover {
+    background: rgba(255, 105, 180, 1); /* Brighter neon pink button on hover */
+  }
+  

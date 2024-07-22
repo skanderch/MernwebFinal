@@ -1,0 +1,60 @@
+/* notifications.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+/* Basic reset and font settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Modal styling */
+.ant-modal {
+  background: rgba(25, 25, 25, 0.8) !important; /* Dark semi-transparent background */
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(128, 0, 128, 0.7); /* Neon purple glow */
+}
+
+.ant-modal-header {
+  border-bottom: 2px solid rgba(128, 0, 128, 0.7) !important; /* Neon purple bottom border */
+}
+
+.ant-modal-title {
+  color: #a506e4; /* White text color */
+}
+
+/* Notification card styling */
+.notification-card {
+  background: rgba(128, 0, 128, 0.2); /* Transparent neon purple background */
+  border: 1px solid rgba(128, 0, 128, 0.5); /* Semi-transparent neon purple border */
+  border-radius: 10px;
+  padding: 15px;
+  color: #a607db; /* White text color */
+  box-shadow: 0 0 10px rgba(128, 0, 128, 0.5); /* Neon purple shadow */
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.notification-card:hover {
+  background: rgba(128, 0, 128, 0.3); /* Slightly more opaque on hover */
+  box-shadow: 0 0 15px rgba(128, 0, 128, 0.7); /* Brighter neon purple shadow */
+}
+
+.notification-card h1, .notification-card span {
+  color: #7804ae; /* White text color */
+}
+
+.notification-card .text-gray-400 {
+  color: rgba(96, 9, 237, 0.7); /* Lighter white for timestamps */
+}
+
+/* Icon styling */
+i {
+  font-size: 20px;
+  color: rgba(128, 0, 128, 0.8); /* Neon purple color for icons */
+  transition: color 0.3s;
+}
+
+i:hover {
+  color: rgba(128, 0, 128, 1); /* Brighter neon purple on hover */
+}

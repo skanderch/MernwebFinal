@@ -1,0 +1,69 @@
+.images-container {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+  }
+  
+  .image-preview {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .image-preview img {
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .image-preview i {
+    color: rgba(0, 255, 255, 0.7);
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .image-preview i:hover {
+    color: rgba(0, 255, 255, 1);
+  }
+  
+  .ant-upload-drag {
+    border: 1px dashed rgba(0, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: rgba(0, 255, 255, 0.7);
+  }
+  
+  .ant-upload-drag:hover {
+    border: 1px dashed rgba(0, 255, 255, 1);
+    color: rgba(0, 255, 255, 1);
+  }
+  
+  .ant-btn-dashed {
+    color: rgba(0, 255, 255, 0.7);
+    border: 1px dashed rgba(0, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .ant-btn-dashed:hover {
+    color: #000;
+    border: 1px dashed rgba(0, 255, 255, 1);
+    background: rgba(0, 255, 255, 0.5);
+  }
+  
+  .ant-btn-default,
+  .ant-btn-primary {
+    color: rgba(0, 255, 255, 0.7);
+    border: 1px solid rgba(0, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .ant-btn-default:hover,
+  .ant-btn-primary:hover {
+    color: #000;
+    border: 1px solid rgba(0, 255, 255, 1);
+    background: rgba(0, 255, 255, 0.5);
+  }
+  

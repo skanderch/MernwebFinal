@@ -1,0 +1,72 @@
+/* Style for the background image */
+.register-background {
+    background-image: url('images/bgregister.gif'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ensure it covers the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for the registration box */
+  .register-box {
+    background: rgba(255, 0, 0, 0.2); /* Neon red with transparency */
+    border: 2px solid rgba(255, 0, 0, 0.7); /* Neon red border */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); /* Neon red glow effect */
+  }
+  
+  /* Style for the form heading */
+  .register-heading {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the form fields */
+  .register-box .ant-form-item {
+    margin-bottom: 15px;
+  }
+  
+  .register-box .ant-input {
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    color: white;
+    border: 1px solid rgba(255, 0, 0, 0.5); /* Red border */
+  }
+  
+  .register-box .ant-input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Light placeholder text */
+  }
+  
+  /* Style for the submit button */
+  .submit-button {
+    background: rgba(255, 0, 0, 0.7); /* Neon red button */
+    border: none;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .submit-button:hover {
+    background: rgba(255, 0, 0, 0.9); /* Darker neon red on hover */
+  }
+  
+  /* Style for the link */
+  .text-link {
+    color: rgba(255, 0, 0, 0.9); /* Neon red link color */
+  }
+  
+  .text-link:hover {
+    color: rgba(255, 0, 0, 1); /* Solid neon red on hover */
+  }
+  
+  /* Style for the text under the form */
+  .text-muted {
+    color: rgba(255, 255, 255, 0.7); /* Light gray text */
+  }
+  

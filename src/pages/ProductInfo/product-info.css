@@ -1,0 +1,114 @@
+
+
+.container {
+    background: rgba(103, 2, 137, 0.8); /* Slightly transparent background for better contrast */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    color: #fff; /* White text for contrast */
+  }
+  
+  .grid {
+    background: rgba(0, 0, 0, 0.7); /* Slightly transparent background for the grid */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+  }
+  
+  .img-main {
+    position: relative; /* To position overlay elements */
+    border-radius: 10px; /* Rounded corners for the main image */
+    overflow: hidden; /* Hide overflow to maintain rounded corners */
+  }
+  
+  .img-main img {
+    width: 10%; /* Full width */
+    height: 10%; /* Full height */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Subtle shadow around the main image */
+  }
+  
+  .img-thumbnails {
+    display: flex;
+    gap: 8px; /* Space between thumbnails */
+    overflow-x: auto; /* Scroll horizontally if needed */
+    padding: 10px 0; /* Padding for better spacing */
+  }
+  
+  .img-thumbnail {
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Light border for thumbnails */
+    border-radius: 5px; /* Rounded corners for thumbnails */
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  
+  .img-thumbnail:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    border-color: rgba(0, 0, 0, 0.5); /* Darker border color on hover */
+  }
+  
+  .text-gray-700 {
+    color: rgba(255, 255, 255, 0.9); /* Slightly transparent white text */
+  }
+  
+  .text-gray-600 {
+    color: rgba(255, 255, 255, 0.7); /* Slightly transparent white text */
+  }
+  
+  .text-orange-900 {
+    color: rgba(255, 165, 0, 1); /* Orange color */
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.6); /* Enhanced glowing effect */
+  }
+  
+  .border-gray-300 {
+    border-color: rgba(255, 255, 255, 0.4); /* Slightly transparent border color */
+  }
+  
+  .border-purple-700 {
+    border-color: rgba(255, 0, 255, 0.5); /* Neon purple border */
+  }
+  
+  button {
+    background-color: rgba(255, 0, 255, 0.5); /* Neon button background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.3); /* Glowing effect */
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 0, 255, 0.7); /* Brighter neon on hover */
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5); /* Stronger glowing effect */
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .flex-between {
+    justify-content: space-between;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .mt-2 {
+    margin-top: 0.5rem;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
